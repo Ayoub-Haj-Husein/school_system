@@ -1,0 +1,47 @@
+body {
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 60px;
+  color: #0081a9;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+}
+
+form {
+  text-align: center;
+}
+
+h2 {
+  color: #444;
+  font-size: 16px;
+  padding: 10px 0;
+  margin: 12px;
+}
+
+
+
+h2 {
+  text-align: center;
+  padding-bottom: 60px;
+  color: #0081a9;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+}
+
+footer {
+  margin-top: 25px;
+}
+
+table {
+  width: 100%;
+}
+
+table thead th,  table tbody td{
+  color: #444;
+  font-size: 12px;
+  padding: 10px;
+  border: 2px solid;
+}
