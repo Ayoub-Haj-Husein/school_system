@@ -5,7 +5,7 @@
    * task =>  You will refactor the render function to render each student information in a separate card in the home page as shown in the image. Note that you will use images for the students in the assets 
               directory. Add all the students in an array and save it to the local storage. => (cards.js page)
    * task =>  Higher Order functions. => (HigherOrderFunctions.js page)
-Problem domain : 
+####Problem domain : 
 You are building a School system for a school, where they can organize their students with their information and filter them.
 Requirements :
 create an index.html , app.js and style.css files   
