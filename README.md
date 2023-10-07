@@ -7,7 +7,7 @@
    * task =>  Higher Order functions. => (HigherOrderFunctions.js page)
 
 
-####Problem domain : 
+#### Problem domain : 
 You are building a School system for a school, where they can organize their students with their information and filter them.
 Requirements :
 create an index.html , app.js and style.css files   
