@@ -74,4 +74,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     form.reset();
   });
+
+  let studentsData = localStorage.getItem("students");
+  let studentsDataObject = JSON.parse(studentsData);
+  studentsDataObject.forEach((el) => {
+    studentsArray.push(el);
+  });
+  studentsArray.forEach((el) => {
+    let newDiv = document.createElement("div");
+    let image = document.createElement("img");
+    let h3 = document.createElement("h3");
+    let pDateOfBirth = document.createElement("p");
+    let pGender = document.createElement("p");
+    let pMajor = document.createElement("p");
+    let pPhoneNumber = document.createElement("p");
+
+    image.setAttribute("src", el.image);
+    h3.textContent = el.fullName;
+    pDateOfBirth.textContent = el.DateOfBirth;
+    pGender.textContent = el.gender;
+    pMajor.textContent = el.major;
+    pPhoneNumber.textContent = el.PhoneNumber;
+
+    newDiv.classList.add("box");
+
+    main.appendChild(newDiv);
+    newDiv.appendChild(image);
+    newDiv.appendChild(h3);
+    newDiv.appendChild(pDateOfBirth);
+    newDiv.appendChild(pGender);
+    newDiv.appendChild(pMajor);
+    newDiv.appendChild(pPhoneNumber);
+  });
 });
