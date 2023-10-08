@@ -260,6 +260,31 @@ Ex13:
 What is the output of the following JS code segments? and Why?
 */
 
+
+// var employee = {
+//   firstName: "Rawan",
+//   sayHi: function () {
+//     console.log("Hi Coach ! " + this.firstName);
+//   },
+// };
+
+// employee.sayHi(); // Hi Coach ! Rawan
+
+// because => this reference to employee object
+
+// var employee = {
+//   firstName: "Rawan",
+//   info: {
+//     hasCar: true,
+//     hasPet: true,
+//   },
+//   printInfo: function () {
+//     console.log("Car owner? " + this.hasCar);
+//   },
+// };
+
+// employee.printInfo(); // Car owner? undefined
+
 var employee = {
   firstName: "Rawan",
   sayHi: function () {
@@ -283,11 +308,27 @@ var employee = {
 };
 
 employee.printInfo(); // Car owner? undefined
-
 /* 
 because => this reference to employee object 
 not info object It should be this.info.hasCar 
 */
+
+
+// var employee = {
+//   firstName: "Rawan",
+//   info: {
+//     hasCar: true,
+//     hasPet: true,
+//     printAddress: function () {
+//       return this.data.address;
+//     },
+//     data: {
+//       address: "Zarqa",
+//     },
+//   },
+// };
+
+// employee.info.printAddress() // Zarqa
 
 var employee = {
   firstName: "Rawan",
@@ -304,6 +345,7 @@ var employee = {
 };
 
 employee.info.printAddress() // Zarqa
+
 
 /* 
 because => this reference to info object 
